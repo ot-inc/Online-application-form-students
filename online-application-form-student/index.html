@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Online Registration Form</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+</head>
+</head>
+<body>
+
+<div class="form-container">
+    <h2>Online Application Form</h2>
+    <p class="form-subtitle">Please fill out all required fields (*)</p>
+
+    <form action="#" method="post">
+
+        <!-- Personal Information Section -->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <label for="fullname">Full Name *</label>
+            <input type="text" id="fullname" name="fullname" required>
+
+            <label for="email">Email Address *</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="phone">Phone Number *</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="dob">Date of Birth *</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="gender">Gender *</label>
+            <select id="gender" name="gender" required>
+                <option value="">-- Select --</option>
+                <option value="male">Male</option>
+                <option value="female">Female</option>
+                <option value="other">Other</option>
+            </select>
+        </fieldset>
+
+        <!-- Address Section -->
+        <fieldset>
+            <legend>Address Information</legend>
+
+            <label for="address">Street Address *</label>
+            <input type="text" id="address" name="address" required>
+
+            <label for="city">City *</label>
+            <input type="text" id="city" name="city" required>
+
+            <label for="state">State/Province *</label>
+            <input type="text" id="state" name="state" required>
+
+            <label for="zipcode">Zip/Postal Code *</label>
+            <input type="text" id="zipcode" name="zipcode" required>
+
+            <label for="country">Country *</label>
+            <input type="text" id="country" name="country" required>
+        </fieldset>
+
+        <!-- Professional Information Section -->
+        <fieldset>
+            <legend>Professional Information</legend>
+
+            <label for="position">Position Applying For *</label>
+            <input type="text" id="position" name="position" required>
+
+            <label for="experience">Years of Experience *</label>
+            <input type="number" id="experience" name="experience" min="0" max="70" required>
+
+            <label for="education">Highest Qualification *</label>
+            <select id="education" name="education" required>
+                <option value="">-- Select --</option>
+                <option value="high_school">High School</option>
+                <option value="diploma">Diploma</option>
+                <option value="bachelor">Bachelor's Degree</option>
+                <option value="master">Master's Degree</option>
+                <option value="phd">PhD</option>
+                <option value="other">Other</option>
+            </select>
+
+            <label for="message">Cover Letter / Additional Information *</label>
+            <textarea id="message" name="message" placeholder="Tell us why you're interested in this position..." required></textarea>
+        </fieldset>
+
+        <!-- Terms & Conditions -->
+        <fieldset>
+            <legend>Agreement</legend>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="terms" required>
+                I agree to the terms and conditions *
+            </label>
+
+            <label class="checkbox-label">
+                <input type="checkbox" name="privacy">
+                I agree to the privacy policy and data processing
+            </label>
+        </fieldset>
+
+        <button type="submit">Submit Application</button>
+        <button type="reset" class="reset-btn">Clear Form</button>
+
+    </form>
+</div>
+
+</body>
+</html>
